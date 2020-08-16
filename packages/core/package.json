@@ -1,0 +1,13 @@
+{
+  "name": "@acuteui/core",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "npm run watch",
+    "build": "npx tsc",
+    "watch": "npx tsc --watch",
+    "clean": "rm -r -f lib index.js index.d.ts"
+  },
+  "devDependencies": {
+    "typescript": "^3.9.7"
+  }
+}

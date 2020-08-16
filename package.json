@@ -1,0 +1,8 @@
+{
+  "name": "@acuteui/workspace",
+  "private": true,
+  "workspaces": [
+    "packages/**",
+    "testing"
+  ]
+}
