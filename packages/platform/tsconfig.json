@@ -1,0 +1,10 @@
+{
+  "extends": "./tsconfig.build.json",
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@acuteui/compiler": ["../compiler/src/lib/index.ts"],
+      "@acuteui/core": ["../core/src/lib/index.ts"]
+    }
+  }
+}

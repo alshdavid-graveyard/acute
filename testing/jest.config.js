@@ -1,5 +1,7 @@
 const esModules = [
-  '@acuteui/core'
+  '@acuteui/compiler',
+  '@acuteui/core',
+  '@acuteui/platform',
 ]
 
 module.exports = {
@@ -18,8 +20,11 @@ module.exports = {
     '^.+\\.tsx?$': 'ts-jest',
   },
   moduleNameMapper: {
-    '^@acuteui/core(.*)$': '<rootDir>/../packages/core/src/$1',
+    '^@acuteui/compiler(.*)$': '<rootDir>/../packages/core/src/lib/$1',
+    '^@acuteui/core(.*)$': '<rootDir>/../packages/core/src/lib/$1',
+    '^@acuteui/platform(.*)$': '<rootDir>/../packages/core/src/lib/$1',
   },
+  setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'],
   transformIgnorePatterns: [
     `<rootDir>/node_modules/(?!${esModules.join('|')})`,
   ]

@@ -1,17 +1,9 @@
 {
-  "extends": "../../tsconfig.base.json",
+  "extends": "./tsconfig.build.json",
   "compilerOptions": {
-    "declaration": true,
-    "declarationDir": "./",
-    "outDir": "./",
-    "baseUrl": "./"
-  },
-  "include": [
-    "./src/**/*"
-  ],
-  "exclude": [
-    "node_modules",
-    "package.json",
-    "tsconfig.json"
-  ]
+    "baseUrl": "./",
+    "paths": {
+      "@acuteui/compiler": ["../compiler/src/lib/index.ts"]
+    }
+  }
 }

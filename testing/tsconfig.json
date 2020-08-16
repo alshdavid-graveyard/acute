@@ -1,11 +1,11 @@
 {
   "extends": "../tsconfig.base.json",
   "compilerOptions": {
-    "outDir": "./",
     "baseUrl": "./",
     "paths": {
-      "@acuteui/core": ["../packages/core/src/index.ts"],
-      "@acuteui/core/*": ["../packages/core/src/*"]
+      "@acuteui/compiler": ["../packages/core/src/lib/index.ts"],
+      "@acuteui/core": ["../packages/core/src/lib/index.ts"],
+      "@acuteui/platform": ["../packages/core/src/lib/index.ts"]
     }
   },
   "include": [

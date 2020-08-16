@@ -6,15 +6,16 @@
     "**/CVS": true,
     "**/node_modules": true,
     "**/tsconfig.json": true,
+    "**/tsconfig.build.json": true,
+    "**/tsconfig.base.json": true,
     "**/yarn.lock": true,
     "**/jest.config.js": true,
+    "**/jest.setup.ts": true,
     "**/babel.config.js": true,
     ".vscode": true,
     "**/.gitignore": true,
     "**/.DS_Store": true,
-    "packages/*/lib": true,
-    "packages/*/.npmignore": true,
-    "packages/*/index.js": true,
-    "packages/*/index.d.ts": true
+    "packages/*/dist": true,
+    "packages/*/.npmignore": true
   }
 }
